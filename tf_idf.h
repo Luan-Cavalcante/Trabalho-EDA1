@@ -3,6 +3,8 @@
 
 int acha_nota(char *);
 void aglutina_texto(FILE *documento,FILE *Nota1,FILE *Nota2,FILE *Nota3,FILE *Nota4,FILE *Nota5,int);
+int len(char *);
+void arranca_pontuacao(char *,int *);
 
 #endif
 
@@ -66,6 +68,41 @@ void aglutina_texto(FILE *documento,FILE *Nota1,FILE *Nota2,FILE *Nota3,FILE *No
         }
         else{
             error++;
+        }
+    }
+}
+
+int len(char *palavra){
+    int i = 0;
+
+    while(palavra[i] != 0){
+        i++;
+    }
+    return i;
+}
+
+
+void arranca_pontuacao(char *palavra,int *len)
+{
+    int i = 0;
+    int aux;
+    //int tem_sinal = 0;
+    char pontuacao[4] = {',','.','"'};
+
+
+    for(i = 0;i < 4;i++){
+        if(palavra[*len-1] == pontuacao[i]){
+            palavra[strlen(palavra) - 1] = palavra[strlen(palavra)];
+        }
+    }
+    
+    for(i = 0;i < 4;i++)
+    {
+        if(palavra[0] == pontuacao[i]){
+            for(aux = 0 ; aux < *len ; aux++){
+                palavra[aux] = palavra[aux+1];
+            }
+            *len--;
         }
     }
 }
