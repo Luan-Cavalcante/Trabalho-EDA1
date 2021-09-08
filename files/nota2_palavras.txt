@@ -1455,6 +1455,7 @@ potential
 understand
 recently
 changed
+ownership/management
 july
 remember
 people
@@ -4382,6 +4383,7 @@ traffic
 sleep
 well.there
 mildew
+bathroom-cleanliness
 fair.the
 shuttle
 airport
@@ -4697,6 +4699,7 @@ night
 confusion
 assignments
 guest
+twice__„á„Æ_‚ëinally
 surprised
 overall
 comfortable
@@ -18335,6 +18338,7 @@ time
 tourists
 spoke
 enjoyed
+rainforest.negatives
 resort
 isolated
 property
@@ -22637,6 +22641,7 @@ pizza
 provide
 options
 beach
+plus._‚£„©_„á‚ûadizo
 brazilian
 ograde
 boreview
@@ -29236,6 +29241,7 @@ ofbeautiful
 gardens
 beach
 noticed
+upholsteredfurniture
 moldy
 thought
 explained
@@ -40763,6 +40769,7 @@ plain
 proscuitto
 plate
 italian
+trattoria__„á„Æ__hat
 shocking
 ominous
 quality
@@ -42205,6 +42212,7 @@ reasonably
 pleasant
 hotel
 certainly
+overpriced/overated
 arrival
 length
 upgraded
@@ -44394,6 +44402,7 @@ previously
 agreed
 additional
 percent
+discount__„á_‚î_otal
 percent
 hours
 later
@@ -47154,6 +47163,7 @@ beginning
 restaurant
 staff
 drink
+overpriced.executive
 lounge
 basement.-
 hilton
@@ -55249,6 +55259,7 @@ good
 great
 costumes
 great
+chereographer.trips-
 outside
 resort
 rented
@@ -63047,6 +63058,7 @@ searching
 inexplicable
 leave
 phone
+message.additionally
 people
 smoke
 hotel
@@ -69458,6 +69470,7 @@ heating
 nights
 despite
 freezing
+temperatures.overall
 recommend
 hotel
 expecting
@@ -69961,6 +69974,7 @@ positive
 great
 location
 walking
+museums/restaurants
 lobby
 breakfast
 expect
@@ -70672,6 +70686,7 @@ noise
 sitting
 couch
 stained
+comfortable.bathroom
 grout
 shower
 extremely
@@ -77266,6 +77281,7 @@ covering
 mattress
 ancient
 reinforced
+chipboard-outrageous
 hotel
 price
 considerable
@@ -77426,6 +77442,7 @@ exactly
 moved
 google
 original
+position.considering
 booked
 january
 nights
@@ -83352,6 +83369,7 @@ visit
 bring
 close
 contact
+third-world-country
 aruba
 bahamas
 saint
@@ -87506,6 +87524,7 @@ parking
 higher
 comparable
 hotels
+escalators/eelvators
 lobby
 escalator
 broken
@@ -94139,6 +94158,7 @@ company
 managing
 resort
 claimed
+reimbursement.should
 reimbursed
 amend
 comment
@@ -102764,6 +102784,7 @@ staff
 definitely
 hard
 greatly
+appreciated.beachthe
 beach
 white
 aquamarine
@@ -108809,6 +108830,7 @@ month
 received
 nothing
 rooms
+insignificant.bottom
 line-
 hotel
 beware
@@ -116469,6 +116491,7 @@ reviews
 expectations
 hotel
 sorely
+disappointed.booking
 hotel
 major
 hassles
@@ -119834,6 +119857,7 @@ lifts
 bring
 restaurant
 level
+over-air-conditioned
 putting
 jacket
 transferred
@@ -121650,6 +121674,7 @@ natour
 years
 stayed
 enjoyed
+extensions/building
 major
 attraction
 longer
@@ -121739,6 +121764,7 @@ again.the
 tired
 dirty
 working
+intermittantly.dirty
 towels
 dirty
 slimy/smelly
@@ -128168,6 +128194,7 @@ guess
 can__„á_„©_
 expect
 strangest
+prefabricatedplastic
 contained
 bathroom
 toilet
@@ -131809,6 +131836,7 @@ service-motorized
 watersports
 person
 slippers
+comfort-personalized
 concierge
 service-30
 minutes
@@ -135678,9 +135706,11 @@ quick
 resort
 dominican
 mexican
+restaurant__„á„Æ_‚ço
 figure__„á„Æ__he
 dominican__„á_„©_
 dominican
+food.breakfast-there
 place
 breakfast
 buffet
@@ -135824,6 +135854,7 @@ place
 little
 better
 declined
+impressed__„á„Æ__his
 tuesday
 option
 french
@@ -135901,6 +135932,7 @@ salad
 located
 inside
 mexican
+restaurant__„á„Æ__ut
 don__„á_„©_
 fooled
 dominican
@@ -135965,6 +135997,7 @@ majestic__„á_„©_
 stretch
 beach
 varied
+day__„á„Æ_„àometimes
 avoid
 wrapped
 ankles
@@ -136167,6 +136200,7 @@ toilet
 privacy
 experience
 public
+bathroom__„á„Æ_‚´nly
 girlfriend
 noise
 walls
@@ -136230,6 +136264,7 @@ lower
 temperature
 degrees
 celsius
+channels__„á„Æ_‚ñost
 english.the
 casino
 casino
@@ -136406,6 +136441,7 @@ turned
 possible
 missed
 service
+nonetheless.fittings
 finishings
 broken
 ceramic
@@ -136614,6 +136650,7 @@ reported
 coffee
 maker
 faulty
+replaced.fortunately
 doctor
 hours
 caught
@@ -142119,6 +142156,7 @@ fashion
 think
 scare
 formal
+dinners__„á_‚è‚µlack
 tie-crowd
 background
 disappointed

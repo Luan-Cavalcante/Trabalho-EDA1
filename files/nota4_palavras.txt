@@ -2926,6 +2926,7 @@ moore
 hotel
 sister
 short
+shopping/sightseeing
 seattle
 beautiful
 drive
@@ -4667,6 +4668,7 @@ lobby
 restaurant.good
 excellent
 value
+restaurant.excellent
 helpful
 friendly
 staffminus
@@ -12794,6 +12796,7 @@ drizzle
 beautifully
 painted
 audobon
+landscapes.bartender
 amiable
 helpful
 directing
@@ -24968,6 +24971,7 @@ suite
 staff
 apologetic
 shower
+shampoo/conditioner
 reception
 coffee
 cookies
@@ -26355,6 +26359,7 @@ union
 square
 cheesecake
 factory
+restaurant.breakfast
 continental
 breakfast
 coupon
@@ -41550,6 +41555,7 @@ upgrade
 level
 sittings
 drinks
+champagne/wine/mixed
 drinks
 night
 newspapers
@@ -42989,6 +42995,7 @@ service
 excellant
 housekeeping
 staff
+restaurants.previous
 blogs
 mentioned
 mandatory
@@ -46940,6 +46947,7 @@ walmart
 amigos
 stock
 bottled
+water/snacks/drinks
 yunque
 skipped
 overpriced
@@ -52639,6 +52647,7 @@ completely-kid
 friendly
 bring
 goggles-the
+well-chlorinated.the
 beach-again
 gorgeous
 clear
@@ -55329,6 +55338,7 @@ managed
 leave
 dollars
 time
+though.activitiesthe
 amazing
 things
 archery
@@ -58045,6 +58055,7 @@ centre
 matches
 deals
 online
+selloffvacations.com
 matched
 booking
 canada
@@ -61836,6 +61847,7 @@ little
 taken
 guess
 improper
+everywhere__„á_‚ê‚´o
 drink
 coffee
 desert
@@ -63064,6 +63076,7 @@ sitting
 beach
 enjoy
 poolside
+activities.check-out
 unlike
 check-in
 nuisance
@@ -66287,6 +66300,7 @@ picture
 departure
 picture
 taken
+immigration/customs
 tourism
 card
 people
@@ -66814,6 +66828,7 @@ interested
 contact
 bugs
 it__„á_„©_
+caribbean__„á„Æ__hey
 live
 cockroach
 floor
@@ -74716,6 +74731,7 @@ cream
 dessert
 meal
 managed
+cross-contamination
 rooms
 clean
 grounds
@@ -77133,6 +77149,7 @@ casino
 played
 needs
 better
+island.entertainment
 nightly
 entertainment
 lobby
@@ -93782,6 +93799,7 @@ unless
 specific
 dollars
 bottles
+waiter.entertainment
 looking
 vegas
 broadway
@@ -96535,6 +96553,7 @@ activities
 dancing
 water
 arobics
+volleyball..soccer.
 archary
 wanted
 nobody
@@ -96569,6 +96588,7 @@ great
 everyday
 small
 clips
+pens..toothbrushes.
 things
 really
 appreciate
@@ -100978,6 +100998,7 @@ previous
 arrangements
 hotel
 restaurants
+town.recommendations
 beautiful
 beach
 flamenco
@@ -110843,6 +110864,7 @@ reproach.great
 floor
 didnt
 hotel
+restaurant.barcelona
 great
 looking
 people
@@ -113051,6 +113073,7 @@ night
 easter
 weekend.great
 hotel
+facilities.excellent
 location
 mainline
 underground
@@ -120032,6 +120055,7 @@ hotel
 basement
 breakfast
 cafes
+neighborhood.overall
 recommend
 hotel
 value
@@ -120438,6 +120462,7 @@ pyramid
 place
 table
 looks-
+caf‚è‚ë„Ñ-cr‚ç‚ë„¢me
 mus‚è‚ë„Ñe
 d'orsay
 museum
@@ -120787,6 +120812,7 @@ corridors
 quirky
 german
 anyiques
+furnishings.pleasant
 business
 sight
 seeing
@@ -123673,6 +123699,7 @@ concierge
 booklet
 discounts
 attractions
+friedrichstadtpalast
 amazing
 technical
 effects
@@ -128847,6 +128874,7 @@ spartan
 price
 quiet
 digital
+unfortunately.buffet
 breakfast
 selection.if
 decent
@@ -134923,6 +134951,7 @@ basically
 expect
 decision
 two-hour
+presentation.overall
 enjoyed
 ilikai
 priceline
@@ -136539,6 +136568,7 @@ settled
 wonderful
 ground
 floor
+activities.security
 beach
 beautiful
 water
@@ -140421,6 +140451,7 @@ looking
 hotel
 flight
 activity
+combinations.finally
 shore
 travel-hawaii.com
 shore
@@ -141442,6 +141473,7 @@ places
 usually
 store-bought
 breakfast
+cereal/muffins/fruit
 room.room
 corner
 ocean
@@ -147681,6 +147713,7 @@ menu.3
 exercise
 unusually
 small
+underequippedoverall
 hotel
 clean
 comfortable
@@ -147732,6 +147765,7 @@ answering
 questions
 housekeeping
 rooms
+impeccable.breakfast
 ample
 varied
 overall
@@ -156336,6 +156370,7 @@ flight
 resort
 atmosphere
 staff
+entertainment.flight
 pearson
 airport
 traveled
@@ -159768,6 +159803,7 @@ afternoon
 getting
 chairs
 quite
+then.entertainmentwe
 shows
 audience
 participation
@@ -161341,11 +161377,13 @@ day.night
 entertainment
 loved
 cheesy
+abso-freakin-lutely
 that__„á_„©_
 entertaining
 don__„á_„©_
 wrong
 quality
+performers__„á„Æ__ut
 entire
 dedicated
 michael
@@ -162408,6 +162446,7 @@ plenty
 opportunity
 nearest
 drink
+calories.restaurants
 seven
 restaurants
 choose
@@ -164626,6 +164665,7 @@ saying
 management
 going
 better.we
+vacation/anniversary
 overall
 expecting
 pleasantly
@@ -167796,6 +167836,7 @@ problem
 loved
 beach
 servers-
+touch.entertainment-
 people
 vacation
 enjoyable
@@ -170414,6 +170455,7 @@ restaurants
 average
 japanese
 italian
+seafood/mediteranean
 steakhouse
 knowing
 spanish
@@ -180912,6 +180954,7 @@ cash
 blooms
 round
 block
+cafe/deli/restaurant
 great
 sandwiches.enjoy
 lovely
@@ -188821,6 +188864,7 @@ drink
 hotel
 expensive
 opted
+breakfast.personally
 hotel
 little
 attractions
@@ -193129,6 +193173,7 @@ neighbourhood
 quiet
 local
 restaurants
+starbucks/steakhouse
 home
 especially
 sights
@@ -194432,6 +194477,7 @@ tickets
 separate
 tickets
 disney
+www.allofrance.co.uk
 tickets
 waste
 rooms
@@ -205173,6 +205219,7 @@ lovely
 comfortable
 clean
 bathroom
+beautiful.spotlessly
 clean.the
 staff
 eager
@@ -218253,6 +218300,7 @@ centre
 check
 emails
 great
+barcelona.directions
 airport
 outside
 terminal
@@ -220650,6 +220698,7 @@ value
 paris
 average
 service
+recommended.location
 perfect
 location
 opera
@@ -222046,6 +222095,7 @@ parisienne
 standards
 looked
 recently
+refreshed/decorated
 facilities
 inside
 including
@@ -224663,6 +224713,7 @@ oriented
 loved
 internet
 access
+water/coffee/snacks
 completely
 adequate
 noise
@@ -233967,6 +234018,7 @@ clean
 welcoming
 friendly
 pretty
+breakfast.originally
 given
 double
 staff
@@ -235483,6 +235535,7 @@ dishy
 definately
 hotel
 visit
+amsterdam.excellent
 "stay
 central
 catch
@@ -245678,6 +245731,7 @@ plus
 halifax
 probably
 pizza
+restaurants/takeouts
 capita
 world
 pizza
@@ -246026,6 +246080,7 @@ chairs
 pools
 filled
 water
+plunge.entertainment
 pretty
 funny
 morning
@@ -249929,6 +249984,7 @@ restaurants
 return
 tired
 seeing
+choices-particularly
 lunch
 breakfast
 restaurants
@@ -250355,6 +250411,7 @@ backpacked
 world
 spent
 night
+hostels/backpackers
 vincents
 encounted.if
 spend
@@ -256089,6 +256146,7 @@ issue
 heavy
 complaining
 hotel
+expected.continental
 breakie
 simple
 nice
@@ -265201,6 +265259,7 @@ pointed
 simply
 change
 partly
+co-worker/supervisor
 background
 watching
 listening
@@ -276925,6 +276984,7 @@ rooms
 smallish
 quite
 plain
+dissappointing.would
 sofitel
 experience
 nice
@@ -287964,6 +288024,7 @@ include
 combined
 daily
 charge
+internet/continental
 breakfast/cable
 tv/etc
 small
@@ -293527,6 +293588,7 @@ better
 expected
 given
 reviews
+tripadvisor.pluses1
 rooms
 pretty
 clean
@@ -294172,6 +294234,7 @@ booked
 superbreak
 nights
 breakfast
+included-exceptional
 value
 hotel
 excellent
@@ -309530,6 +309593,7 @@ buffet
 breakfast
 sample
 little
+kick-you-in-the-arse
 coffee
 croissants
 toast
@@ -317688,6 +317752,7 @@ graduation
 gift
 paradise
 leave
+philadelphia__„á_„©_
 degree
 weather
 warmth
@@ -318168,6 +318233,7 @@ clothes
 we__„á_„©„àe
 wasting
 beach
+time.__„á„Æ‚î„•each
 waves
 water
 rough
@@ -323620,6 +323686,7 @@ balquisse
 elegant
 intimate
 venue
+nevertheless..kudeta
 minutes
 excellent
 option
@@ -332133,6 +332200,7 @@ fancy
 views
 clean
 modern
+comfortable.location
 hotel
 perfect
 tourists
@@ -354326,6 +354394,7 @@ suites
 great
 money
 location
+florence.don__„á_„©_
 entrance
 hotels
 buildings
@@ -362229,6 +362298,7 @@ lacking
 resort
 things
 wasting
+understood.reception
 tried
 double
 charge
@@ -375527,6 +375597,7 @@ loved
 spacious
 junior
 suites
+refrigerator/freezer
 repair
 mention
 twice
@@ -381002,6 +381073,7 @@ playing
 turned
 chocolates
 nothing
+pampered.restaurants
 tried
 restaurants
 good
@@ -381032,6 +381104,7 @@ drinks
 variety
 decide
 bartenders
+recommendation.beach
 pools
 windy
 beach
@@ -392286,6 +392359,7 @@ room.also
 expecting
 raffles
 luxury
+complaints.breakfast
 worked
 making
 obliging.yes
@@ -393182,6 +393256,7 @@ concierg
 palms
 helpful
 recommending
+restauraunts.overall
 palms
 perfect
 wanted
@@ -394324,6 +394399,7 @@ venice
 aside
 major
 tourist
+attractions/museums
 breakfast
 typical
 satisfactory
@@ -395724,6 +395800,7 @@ windows
 included
 small
 kitchenette
+refrigerator/freezer
 sink
 microwave
 dishwasher
@@ -396029,6 +396106,7 @@ thought
 printer
 great
 execution
+desired.nevertheless
 stay
 definitely
 shot
@@ -401513,6 +401591,7 @@ orange
 passion
 fruit
 juice
+breakfast~delicious
 desserts
 incredible
 ocean
@@ -401932,6 +402011,7 @@ linen
 drawstrings
 flops
 change
+shorts.entertainment
 lots
 crowd
 starts
@@ -402620,6 +402700,7 @@ better
 experienced
 dinner
 good
+restaurant__„á„Æ__he
 steak
 one__„á„Æ_‚ùe
 disappointed
@@ -402632,6 +402713,7 @@ bring
 things
 need__„á„Æ__he
 stores
+outrageous__„á„Æ_‚ûs
 suntan
 lotion
 language
@@ -408603,6 +408685,7 @@ person
 resort
 all-inclusive
 reasonable
+privilege.i__„á_„©„∂
 stars
 that__„á_„©_
 based
@@ -411351,6 +411434,7 @@ bothered
 vacation
 sales
 people
+annoyance.excursions
 excursion
 wheeling
 apple
@@ -412403,6 +412487,7 @@ travelled
 ocean
 march
 booked
+reniassance/journeys
 travel
 winnipeg
 transat.we
@@ -413614,6 +413699,7 @@ sands.lets
 start
 points
 entire
+experience.travelled
 choice
 check
 return
@@ -422384,6 +422470,7 @@ cable
 giant
 buddha
 monastery
+chinese__„á_‚ê„™tyle
 village
 ngong
 attractions
@@ -425140,6 +425227,7 @@ joking
 manner
 broadway
 shows
+entertainers/dancers
 really
 hard
 favorite
@@ -440142,6 +440230,7 @@ heaviest
 bells
 fifty
 pounds
+etc.internetinternet
 worked
 little
 painful
@@ -444242,6 +444331,7 @@ paseo
 gracia
 metre
 carriage
+platform__„á„Æ_„™ess
 enabled
 aware.first
 montjunic
@@ -445622,6 +445712,7 @@ scott
 concierge.we
 upgraded
 pleasantly
+decorated.definitely
 area
 class
 experience
@@ -448073,6 +448164,7 @@ hotel
 primarily
 favorable
 reviews
+tripadvisor.check-in
 quick
 efficient
 corner
