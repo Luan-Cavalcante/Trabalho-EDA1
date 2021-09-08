@@ -10000,6 +10000,7 @@ desert
 floor
 customer
 facing
+job__„á_‚è_e__„á_„©_
 arrogant
 comp__„á_„©„∂
 moved
@@ -11614,6 +11615,7 @@ annoyed
 highlights
 significant
 deficiencies
+organization__„á_„©_
 customer
 service
 practices
@@ -19036,6 +19038,7 @@ towels
 signs
 chairs
 unless
+enforced.restaurants
 service
 general
 fair
@@ -47323,6 +47326,7 @@ glass
 hotel
 tried
 reach
+unsuccessfully.sorry
 review
 needs
 experienced
@@ -47373,6 +47377,7 @@ check
 staff
 friendly
 advising
+refreshments/popcorn
 terribly
 unconcerned
 called
@@ -47619,6 +47624,7 @@ contracted
 satisfaction
 overcharges
 available
+hotel.recommendation
 orleans
 sites
 place
@@ -47921,6 +47927,7 @@ price-gouging
 investigate
 honoring
 corporate
+reservations.happily
 exquisite
 service
 hotel
@@ -52002,6 +52009,7 @@ misled
 star
 expect
 down-at-heel
+disappointed.however
 point
 italian
 workers
@@ -61072,6 +61080,7 @@ shower
 tepid
 adjust
 position
+nozzles.housekeeping
 saturday
 morning
 morning
@@ -71843,6 +71852,7 @@ barrells
 shock
 arrived
 start
+holiday.rooms.stayed
 numbers
 overlook
 morning
@@ -81467,6 +81477,7 @@ porch.10.hiking
 boots
 beaches
 sand.11.your
+negotiating/debating
 skills
 unnecessary
 charges
@@ -93069,6 +93080,7 @@ stayed
 all-inclusive
 resorts
 definitely
+partially-inclusive
 extra
 charge
 certain
@@ -97560,6 +97572,7 @@ recommend
 rooms
 small
 bathroom
+disgusting.breakfast
 cheap
 hotel
 terrible.never
@@ -104205,6 +104218,7 @@ beautiful
 words
 vocabulary
 nasty
+selections__„á„Æ__he
 buffet
 basically
 disgusting.the

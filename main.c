@@ -17,25 +17,45 @@ int length_palavra;
 int maior_comprimento;
 int qtde_palavra;
 int qntd_doc = 0;
+int qntd_voc;
 
-//int conta_palavra_idf(FILE *arquivo,char *palavra)
-//{
 
-//}
+int acha_palavra_idf(FILE *arquivo,char *palavra)
+{
+    rewind(arquivo);
+    //printf("Poorra onde tu tá ? \n");
+    char arroz[64];
+    int i = 0;
+    while(!feof(arquivo)){
+
+        fscanf(arquivo,"%s",arroz);
+
+        //printf("palavra lida %s palavra desejada %s\n",arroz,palavra);
+
+        if(strcmp(arroz,palavra) == 0){
+            //printf("Achei igual\n");
+            //printf("%s eh igual a %s",arroz,palavra);
+            return 1;
+        }
+    }
+    return 0;
+}
+
 
 int conta_palavra(FILE *arquivo,char *palavra){
-
     rewind(arquivo);
-    char word[64];
     int cont_palavra = 0;
+    char word[20];
 
     while(!feof(arquivo)){
         fscanf(arquivo,"%s",word);
 
-        if(strcmp(word,palavra) == 0){
+        if(strcmp(word,palavra) == 0)
+        {
             cont_palavra++;
         }
     }
+
     return cont_palavra;
 }
 
@@ -154,7 +174,7 @@ int main(void){
             // agora vou abrir pra leitura
             vocabulario_rep = fopen("files/vocabulario_palavras.txt","r");
 
-            gera_arq_sem_rep(vocabulario_sem_rep,vocabulario_rep);
+            gera_arq_sem_rep(vocabulario_sem_rep,vocabulario_rep,1000);
 
             // contar quantas palavras tem no txt
 
@@ -162,9 +182,12 @@ int main(void){
             fclose(vocabulario_sem_rep);
             //fclose(vocabulario_rep);
             fclose(documento);
+
+            
         }
         else if(escolha == 3)
         {
+            int aux = 0;
             int i = 0;
 
             FILE *nota1_palavras = NULL;
@@ -192,6 +215,18 @@ int main(void){
             gera_vocabulario_completo(Nota4,nota4_palavras);
             gera_vocabulario_completo(Nota5,nota5_palavras);
 
+            fclose(nota1_palavras);
+            fclose(nota2_palavras);
+            fclose(nota3_palavras);
+            fclose(nota4_palavras);
+            fclose(nota5_palavras);
+            
+            nota1_palavras = fopen("files/nota1_palavras.txt","r");
+            nota2_palavras = fopen("files/nota2_palavras.txt","r");
+            nota3_palavras = fopen("files/nota3_palavras.txt","r");
+            nota4_palavras = fopen("files/nota4_palavras.txt","r");
+            nota5_palavras = fopen("files/nota5_palavras.txt","r");
+
             // conta quantas palavras tem em cada arquivo
             int qntd_palavras_N1 = len_arquivo(Nota1);
             int qntd_palavras_N2 = len_arquivo(Nota2);
@@ -200,7 +235,7 @@ int main(void){
             int qntd_palavras_N5 = len_arquivo(Nota5);
 
             // conta quantas palavras tem no vocabulário
-            int qntd_voc = len_arquivo(vocabulario_sem_rep);
+            qntd_voc = len_arquivo(vocabulario_sem_rep);
 
             printf("####Quantidade de palavras : %d####\n",qntd_voc);
 
@@ -210,51 +245,79 @@ int main(void){
 
             char vocabulario_vetor[qntd_voc][20];
             float TF_IDF_1[qntd_voc];
+            float TF_IDF_2[qntd_voc];
+            float TF_IDF_3[qntd_voc];
+            float TF_IDF_4[qntd_voc];
+            float TF_IDF_5[qntd_voc];
             float IDF[qntd_voc];
-            int repeticao[qntd_voc];
-            int aux = 0;
-
 
             //loop para gerar vetor de vocabulário
             rewind(vocabulario_sem_rep);
 
-            while(!feof(vocabulario_sem_rep)){
-
+            while(!feof(vocabulario_sem_rep) && (aux < qntd_voc)){
+                
                 fscanf(vocabulario_sem_rep,"%s",palavra_lida);
                 //printf("palavra arquivo %s\n",palavra_lida);
                 strcpy(vocabulario_vetor[aux],palavra_lida);
-                //printf("palavra vetor %s\n",vocabulario_vetor[i]);
+                    //printf("palavra vetor %s\n",vocabulario_vetor[i]);
                 aux++;
             }
 
+            strcpy(vocabulario_vetor[0],"rice");
+
             // loop de verificação
-            aux = 0;
-            while(aux < qntd_voc)
-            {
-                printf("palavra %d : %s\n",i,vocabulario_vetor[i]);
-                i++;
-                if(i == 15){
-                    break;
-                }
-            }
-            // conta quantas vezes essa palavra aparece
-            aux = 0;
-            i = 0;
-            int cont = 0;
-
-            for(aux = 0;aux<10;aux++)
-            {
-                repeticao[aux] = conta_palavra_idf(vocabulario_rep,vocabulario_vetor[aux]);
-                printf("A palavra %s aparece %d vezes\n",vocabulario_vetor[aux],repeticao[aux]);
-            }
-
+            //for(aux = 0;aux<qntd_voc;aux++){
+                //printf("palavra %d : %s\n",aux,vocabulario_vetor[aux]);
+            //}
+            
             // IDF 
+            int num_doc = 0;
+            for(aux = 0;aux < qntd_voc;aux++)
+            {
+                //printf("Poorra onde tu tá ? \n");
+                num_doc += acha_palavra_idf(nota1_palavras,vocabulario_vetor[aux]);
+                num_doc += acha_palavra_idf(nota2_palavras,vocabulario_vetor[aux]);
+                num_doc += acha_palavra_idf(nota3_palavras,vocabulario_vetor[aux]);
+                num_doc += acha_palavra_idf(nota4_palavras,vocabulario_vetor[aux]);
+                num_doc += acha_palavra_idf(nota5_palavras,vocabulario_vetor[aux]);
+                
+                //printf("num de vezes = %d\n",num_doc);
 
-            for(aux = 0;aux<qntd_voc;i++){
+                IDF[aux] = log10f((float)5/(float)num_doc);
 
+                //printf("%d - Para a palavra %s o IDF eh %f\n",aux,vocabulario_vetor[aux],IDF[aux]);
+
+                num_doc = 0;
             }
 
             // TFIDF PARA NOTA 1
+
+            //printf("A qntd de vezes que  aparece eh %d\n",conta_palavra(nota1_palavras,"hotel"));
+            float teste = ((float)conta_palavra(nota1_palavras,vocabulario_vetor[1])/(float)qntd_palavras_N1) * IDF[40];
+            //printf("\n\n\n%f\n\n\n\n",teste);
+
+            for(aux = 0;aux < qntd_voc;aux++)
+            {
+                //printf("A qntd de vezes que %s aparece eh %d\n",vocabulario_vetor[aux],conta_palavra(nota1_palavras,vocabulario_vetor[aux]));
+
+                //printf("IDF para %s = %f\n\n",vocabulario_vetor[aux],IDF[aux]);
+
+                TF_IDF_1[aux] = 10000 * ((float)conta_palavra(nota1_palavras,vocabulario_vetor[aux])/(float)qntd_palavras_N1) * IDF[aux];
+                TF_IDF_2[aux] = 10000 * ((float)conta_palavra(nota2_palavras,vocabulario_vetor[aux])/(float)qntd_palavras_N2) * IDF[aux];
+                TF_IDF_3[aux] = 10000 * ((float)conta_palavra(nota3_palavras,vocabulario_vetor[aux])/(float)qntd_palavras_N3) * IDF[aux];
+                TF_IDF_4[aux] = 10000 * ((float)conta_palavra(nota4_palavras,vocabulario_vetor[aux])/(float)qntd_palavras_N4) * IDF[aux];
+                TF_IDF_5[aux] = 10000 * ((float)conta_palavra(nota5_palavras,vocabulario_vetor[aux])/(float)qntd_palavras_N5) * IDF[aux];
+                
+                //printf("tfidf 1 %f\n",TF_IDF_1[aux]);
+                //printf("tfidf 2 %f\n",TF_IDF_2[aux]);
+                //printf("tfidf 3 %f\n",TF_IDF_3[aux]);
+                //printf("tfidf 4 %f\n",TF_IDF_4[aux]);
+                //printf("tfidf 5 %f\n",TF_IDF_5[aux]);
+                if(aux % 100 == 0)
+                {
+                    printf("Estamos em %d * 100\n",aux);
+                }
+            }
 
             //printf("Qntd de palavras:\nNota1 %d\nNota2 %d\nNota3 %d\nNota4 %d\nNota5 %d\n",
             //        qntd_palavras_N1,qntd_palavras_N2,qntd_palavras_N3,qntd_palavras_N4,qntd_palavras_N5);
@@ -265,6 +328,25 @@ int main(void){
             fclose(nota3_palavras);
             fclose(nota4_palavras);
             fclose(nota5_palavras);
+
+            printf("|    Vocabulario     |   Nota 1     |    Nota 2    |     Nota 3   |    Nota 4     |     Nota 5     |\n");
+            
+            for(aux = 0; aux < qntd_voc ; aux++)
+            {
+                printf("|");
+                printf("%s",vocabulario_vetor[aux]);
+                for(int aux2 = 0;aux2 < 20 - len(vocabulario_vetor[aux]) ; aux2++)
+                {
+                    printf(" ");
+                }
+
+                printf("|   %f   |   %f   |   %f   |   %f    |    %f    |\n",TF_IDF_1[aux],TF_IDF_2[aux],TF_IDF_3[aux],TF_IDF_4[aux],TF_IDF_5[aux]);
+            }
+
+        }
+        else if(escolha == 4)
+        {
+            printf("calma\n");
         }
         else if(escolha == 5)
         {
@@ -280,8 +362,6 @@ int main(void){
     printf("O NUMERO DE ERRORS EH : %d\n",error);
 
     // fechamento dos arquivos.
-
-
     //fclose(documento);
     fclose(Nota1);
     fclose(Nota2);
@@ -290,9 +370,6 @@ int main(void){
     fclose(Nota5);
     //
     //fclose(vocabulario_rep);
-
-
-    //free(vocabulario_vetor);
 
     //fclose(vocabulario);
 

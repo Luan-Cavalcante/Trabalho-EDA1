@@ -17,7 +17,7 @@ void normaliza_tolower(char *,int *);
 int verifica_num(char *);
 int procura_palavra(char *palavra,int qtde_palavra,FILE *arquivo);
 void gera_vocabulario_completo(FILE *documento,FILE *vocabulario2);
-void gera_arq_sem_rep(FILE *vocabulario,FILE *vocabulario2);
+void gera_arq_sem_rep(FILE *vocabulario,FILE *vocabulario2,int limite);
 
 #endif
 
@@ -198,20 +198,20 @@ void gera_vocabulario_completo(FILE *documento,FILE *vocabulario2)
         // TODO
         //printf("%s\n",palavra_lida);
 
-        if(((length_palavra > 4) && (length_palavra < 20)) && (verifica_num(palavra_lida) == 0)){
+        if(((length_palavra > 4) && (length_palavra <= 20)) && (verifica_num(palavra_lida) == 0)){
             //printf("EH PRA EU PRINTAR AGORA SHIT");
             fprintf(vocabulario2,"%s\n",palavra_lida);
             qtde_palavra++;
         }
     }
 
-    printf("Maior comprimento de palavra: %d\nQntd de palavras = %d\n",maior_comprimento,qtde_palavra);
+    //printf("Maior comprimento de palavra: %d\nQntd de palavras = %d\n",maior_comprimento,qtde_palavra);
     
     // fechei pra mandar pro disco, shit !!!
     fclose(vocabulario2);
 }
 // gera arquivo sem repeticao , mas demora mtt !!!!!
-void gera_arq_sem_rep(FILE *vocabulario,FILE *vocabulario2)
+void gera_arq_sem_rep(FILE *vocabulario,FILE *vocabulario2,int limite)
 {
 
     long int posicao;
@@ -248,7 +248,7 @@ void gera_arq_sem_rep(FILE *vocabulario,FILE *vocabulario2)
 
         //fclose(vocabulario);
 
-        if(i==100){
+        if(i==limite){
             break;
         }
 

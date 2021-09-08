@@ -21803,6 +21803,7 @@ almmost
 overcrowded
 disappears
 sunday
+afternoon.snorkeling
 beach
 randomly
 interesting
@@ -22033,6 +22034,7 @@ covered
 grit
 guide
 alberta
+entertaining.overall
 enjoyed
 boyfriend
 finally
@@ -24736,6 +24738,7 @@ speak
 spanish
 really
 appreciate
+effort.unfortunately
 resort
 allows
 timeshare
@@ -27880,6 +27883,7 @@ shame
 guys/gals
 dollar
 really
+general/beach/poolif
 looking
 beachfront
 rooms
@@ -32594,6 +32598,7 @@ hotwire
 priceline
 guess
 rates
+intecontinental.com
 sorry
 hotel
 overall
@@ -37912,6 +37917,7 @@ serve
 number
 guest
 hotel
+accomodate.amenities
 sight
 health
 facility
@@ -38571,6 +38577,7 @@ appreciate
 neighborhood
 goes..it
 described
+modern-hipster..kind
 castro
 district
 francisco
@@ -50865,6 +50872,7 @@ mexican
 place
 steakhouse
 unless
+outside.overall-this
 place
 recommend
 friends
@@ -55444,6 +55452,7 @@ caribe
 door
 owner
 barcelo
+villas/village/ocean
 resort
 barcelo
 bavaro
@@ -56462,6 +56471,7 @@ foods
 major
 reason
 return
+resort.entertainment
 watched
 entertainment
 night
@@ -56910,6 +56920,7 @@ plenty
 mirror
 space
 dryer
+complaint__„á_‚ê‚´he
 water
 pressure
 practically
@@ -57762,6 +57773,7 @@ airline
 flight
 great
 smooth
+flight.unfortunately
 raining
 arrived
 punta
@@ -57989,6 +58001,7 @@ ocean
 building
 backed
 grimy
+residential/business
 enter
 leave
 room
@@ -68345,6 +68358,7 @@ price
 hotels
 value
 helpful
+staffdisappointments
 small
 deepest
 little
@@ -82020,6 +82034,7 @@ budget
 grocery
 store
 street
+snacks/veggies/fruit
 store
 minibar
 hotel
@@ -90790,6 +90805,7 @@ luckily
 worked
 wanted
 start
+vacation.unrelenting
 marketers
 resort
 time-share
@@ -90876,6 +90892,7 @@ prepared
 english
 negative
 proper
+expectations.overall
 pretty
 vacation
 beach
@@ -99991,6 +100008,7 @@ great
 service
 airport
 mamu__„á_„©_
+location.con__„á_„©_
 hotel
 spent
 kitchenette
@@ -100534,6 +100552,8 @@ worker__„á_„©_
 attitudes
 dominicans
 really
+people.__„á„Æ‚î_hows
+variety__„á„Æ‚î‚±ids
 watch
 additional
 charge
@@ -106134,6 +106154,7 @@ accomodate
 members
 fights
 seats
+breakfast.question.
 nowadays
 really
 hotel/room
@@ -107209,6 +107230,7 @@ family-friendly
 clean
 touristy
 place
+sophisticated-class
 fine
 restaurant
 argonaut
@@ -109191,6 +109213,7 @@ closed
 renovations
 valet
 parking
+convenient.negotiate
 rate
 noticed
 completely
@@ -109508,6 +109531,7 @@ faster
 better
 well.a'la
 carte
+restaurant.italianwe
 tried
 hungry
 portion
@@ -113298,6 +113322,7 @@ varied
 staff
 person
 provided
+information.location
 hotel
 good
 metro
@@ -119689,6 +119714,7 @@ seasons
 hotel
 arrive
 hotel
+convenience.location
 blocks
 orchard
 walking
@@ -119962,6 +119988,7 @@ center
 morning
 fresh
 chinatown
+minutes.service-wise
 reception
 alright
 getting
@@ -119991,6 +120018,7 @@ think
 advance
 requested
 available
+smoking/non-smoking
 switch
 king-bed
 phone
@@ -121537,6 +121565,7 @@ breathtaking
 clean
 large
 linens
+comfortable.location
 extremely
 secluded
 impossible
@@ -128819,6 +128848,7 @@ trapped
 beneath
 covers
 rendering
+unappetizing.luckily
 great
 selection
 quality
@@ -136567,6 +136597,7 @@ purchase
 tourist
 person
 passed
+immigration/customs
 luggage
 waiting
 carousel
@@ -137159,6 +137190,7 @@ hydromassage
 hands
 massage
 stars
+plus*****restaurants
 buffet
 variety
 breakfast
@@ -142933,6 +142965,7 @@ replaced
 ravioli
 ravioli
 pretty
+good__„á„Æ_„∂lthough
 nothing
 great
 bruschetta
@@ -149072,6 +149105,7 @@ learned
 late
 really
 higher
+expectations.overall
 great
 reading
 restful
@@ -149730,6 +149764,7 @@ lovely
 nite-
 thats
 hotels
+responsibility.staff
 inconsistent-
 sorry
 correct
@@ -157744,6 +157779,7 @@ happier
 individual
 beds.there
 places
+dryer__„á„Æ_‚îeither
 bathroom
 mirror
 outlet
@@ -163779,6 +163815,7 @@ forecasts
 sorry
 written
 include
+suggestion__„á„Æ_‚èf
 opportunity
 sanoa
 island
