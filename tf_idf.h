@@ -9,15 +9,20 @@ int length_palavra;
 int maior_comprimento;
 int qtde_palavra;
 
+
 int acha_nota(char *);
-void aglutina_texto(FILE *documento,FILE *Nota1,FILE *Nota2,FILE *Nota3,FILE *Nota4,FILE *Nota5,int);
+void aglutina_texto(FILE *,FILE *Nota1,FILE *Nota2,FILE *Nota3,FILE *Nota4,FILE *Nota5,int);
 int len(char *);
 void arranca_pontuacao(char *,int *);
 void normaliza_tolower(char *,int *);
 int verifica_num(char *);
-int procura_palavra(char *palavra,int qtde_palavra,FILE *arquivo);
-void gera_vocabulario_completo(FILE *documento,FILE *vocabulario2);
-void gera_arq_sem_rep(FILE *vocabulario,FILE *vocabulario2,int limite);
+int procura_palavra(char *,int ,FILE *);
+void gera_vocabulario_completo(FILE *,FILE *);
+void gera_arq_sem_rep(FILE *,FILE *,int );
+int len_arquivo(FILE *);
+int conta_palavra(FILE *,char *);
+int acha_palavra_idf(FILE *,char *);
+
 
 #endif
 
@@ -205,7 +210,7 @@ void gera_vocabulario_completo(FILE *documento,FILE *vocabulario2)
         }
     }
 
-    //printf("Maior comprimento de palavra: %d\nQntd de palavras = %d\n",maior_comprimento,qtde_palavra);
+    printf("Maior comprimento de palavra: %d\nQntd de palavras = %d\n",maior_comprimento,qtde_palavra);
     
     // fechei pra mandar pro disco, shit !!!
     fclose(vocabulario2);
@@ -256,4 +261,74 @@ void gera_arq_sem_rep(FILE *vocabulario,FILE *vocabulario2,int limite)
             printf("Estou em %d mil\n",i);
         }
     }
+}
+
+int len_arquivo(FILE *arquivo)
+{
+    int i = 0;
+    rewind(arquivo);
+
+    while(!feof(arquivo)){
+        fscanf(arquivo,"%s",palavra_lida);
+
+        length_palavra = len(palavra_lida);
+
+        if(maior_comprimento < length_palavra){
+            maior_comprimento = length_palavra;
+        }
+
+        // arranca pontuacao
+        arranca_pontuacao(palavra_lida,&length_palavra);
+
+        // tolower
+        normaliza_tolower(palavra_lida,&length_palavra);
+
+        //verifica num e len
+        if(((length_palavra > 4) && (length_palavra <= 20)) && (verifica_num(palavra_lida) == 0)){
+            i++;
+        }
+        //printf("%s\n",palavra_lida);
+    }
+    // ele lê a última palavra 2 vezes
+    return i;
+}
+
+int conta_palavra(FILE *nota,char *palavra)
+{
+    rewind(nota);
+    int cont = 0;
+    char word[64];
+    //printf("Quero achar %s\n",palavra);
+
+    while(!feof(nota))
+    {
+        fscanf(nota,"%s",word);
+
+        if(strcmp(word,palavra) == 0)
+        {
+            cont++;
+        }
+    }
+
+    return cont;
+}
+
+int acha_palavra_idf(FILE *arquivo,char *palavra)
+{
+    rewind(arquivo);
+    char arroz[64];
+    int i = 0;
+    while(!feof(arquivo)){
+
+        fscanf(arquivo,"%s",arroz);
+
+        //printf("palavra lida %s palavra desejada %s\n",arroz,palavra);
+
+        if(strcmp(arroz,palavra) == 0){
+            //printf("Achei igual\n");
+            //printf("%s eh igual a %s",arroz,palavra);
+            return 1;
+        }
+    }
+    return 0;
 }
