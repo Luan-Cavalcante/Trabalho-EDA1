@@ -9,6 +9,13 @@
 #define MAX_LENGTH 64
 #define MAX_LENGTH_VECTOR 15
 
+//############### INTEGRANTES ###################
+// Luan Vasco Cavalcante - 190111836            //
+// Leonardo Sampaio Barros - 170038971          //
+// Vinícius Angelo de Brito Vieira - 190118059  //
+// Os outros 2 integrantes deixaram a matéria   //
+//################################################
+
 
 // variavel global
 int error = 0;
