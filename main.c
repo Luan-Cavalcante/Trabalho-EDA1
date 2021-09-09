@@ -18,77 +18,7 @@ int maior_comprimento;
 int qtde_palavra;
 int qntd_doc = 0;
 int qntd_voc;
-
-
-int acha_palavra_idf(FILE *arquivo,char *palavra)
-{
-    rewind(arquivo);
-    //printf("Poorra onde tu tá ? \n");
-    char arroz[64];
-    int i = 0;
-    while(!feof(arquivo)){
-
-        fscanf(arquivo,"%s",arroz);
-
-        //printf("palavra lida %s palavra desejada %s\n",arroz,palavra);
-
-        if(strcmp(arroz,palavra) == 0){
-            //printf("Achei igual\n");
-            //printf("%s eh igual a %s",arroz,palavra);
-            return 1;
-        }
-    }
-    return 0;
-}
-
-
-int conta_palavra(FILE *arquivo,char *palavra){
-    rewind(arquivo);
-    int cont_palavra = 0;
-    char word[20];
-
-    while(!feof(arquivo)){
-        fscanf(arquivo,"%s",word);
-
-        if(strcmp(word,palavra) == 0)
-        {
-            cont_palavra++;
-        }
-    }
-
-    return cont_palavra;
-}
-
-int len_arquivo(FILE *arquivo)
-{
-    int i = 0;
-    rewind(arquivo);
-
-    while(!feof(arquivo)){
-        fscanf(arquivo,"%s",palavra_lida);
-
-        length_palavra = len(palavra_lida);
-
-        if(maior_comprimento < length_palavra){
-            maior_comprimento = length_palavra;
-        }
-
-        // arranca pontuacao
-        arranca_pontuacao(palavra_lida,&length_palavra);
-
-        // tolower
-        normaliza_tolower(palavra_lida,&length_palavra);
-
-        //verifica num e len
-        if(((length_palavra > 4) && (length_palavra <= 20)) && (verifica_num(palavra_lida) == 0)){
-            i++;
-        }
-        //printf("%s\n",palavra_lida);
-    }
-    // ele lê a última palavra 2 vezes
-    return i;
-}
-
+int lim;
 
 int main(void){
 
@@ -174,7 +104,10 @@ int main(void){
             // agora vou abrir pra leitura
             vocabulario_rep = fopen("files/vocabulario_palavras.txt","r");
 
-            gera_arq_sem_rep(vocabulario_sem_rep,vocabulario_rep,1000);
+
+            printf("Quantas palavras deseja fazer o teste :");
+            scanf("%d",&lim);
+            gera_arq_sem_rep(vocabulario_sem_rep,vocabulario_rep,lim);
 
             // contar quantas palavras tem no txt
 
@@ -267,7 +200,7 @@ int main(void){
 
             // loop de verificação
             //for(aux = 0;aux<qntd_voc;aux++){
-                //printf("palavra %d : %s\n",aux,vocabulario_vetor[aux]);
+            //    printf("palavra %d : %s\n",aux,vocabulario_vetor[aux]);
             //}
             
             // IDF 
@@ -290,11 +223,18 @@ int main(void){
                 num_doc = 0;
             }
 
+
+            for(aux = 0;aux<qntd_voc;aux++){
+                //printf("%d - palavra %s : %f\n",aux,vocabulario_vetor[aux],IDF[aux]);
+            }
+
             // TFIDF PARA NOTA 1
 
             //printf("A qntd de vezes que  aparece eh %d\n",conta_palavra(nota1_palavras,"hotel"));
-            float teste = ((float)conta_palavra(nota1_palavras,vocabulario_vetor[1])/(float)qntd_palavras_N1) * IDF[40];
+            //float teste = ((float)conta_palavra(nota1_palavras,vocabulario_vetor[1])/(float)qntd_palavras_N1) * IDF[40];
             //printf("\n\n\n%f\n\n\n\n",teste);
+
+            //printf("\n\n####################%d##################\n\n",conta_palavra(nota1_palavras,"horrible"));
 
             for(aux = 0;aux < qntd_voc;aux++)
             {
@@ -313,10 +253,7 @@ int main(void){
                 //printf("tfidf 3 %f\n",TF_IDF_3[aux]);
                 //printf("tfidf 4 %f\n",TF_IDF_4[aux]);
                 //printf("tfidf 5 %f\n",TF_IDF_5[aux]);
-                if(aux % 100 == 0)
-                {
-                    printf("Estamos em %d * 100\n",aux);
-                }
+                
             }
 
             //printf("Qntd de palavras:\nNota1 %d\nNota2 %d\nNota3 %d\nNota4 %d\nNota5 %d\n",
@@ -342,16 +279,16 @@ int main(void){
 
                 printf("|   %f   |   %f   |   %f   |   %f    |    %f    |\n",TF_IDF_1[aux],TF_IDF_2[aux],TF_IDF_3[aux],TF_IDF_4[aux],TF_IDF_5[aux]);
             }
-
         }
+
         else if(escolha == 4)
         {
-            printf("calma\n");
+            printf("Não conseguimos fazer o vetor da opcao 3 chegar aqui na 4\n");
+            printf("Se eu declarar como global não tem como alocar dinâmico");
         }
         else if(escolha == 5)
         {
             printf("Saindo...\n");
-
         }
         else{
             printf("Opcao ainda invalida\n");
@@ -359,7 +296,7 @@ int main(void){
     }
 
     // numero de errors tem que permanecer em 0. por causa da primeira linha -1
-    printf("O NUMERO DE ERRORS EH : %d\n",error);
+    //printf("O NUMERO DE ERRORS EH : %d\n",error);
 
     // fechamento dos arquivos.
     //fclose(documento);
